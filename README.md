@@ -34,7 +34,7 @@ then you can investigate the pipeline and trigger a run. **YOU CAN ALSO REVIEW T
         a. This will not currently run on the pipeline, however if running locally, you'll need to have docker installed and run\
         `docker run -d -p 4444:4444 --shm-size 2g -p 5900:5900 selenium/standalone-chrome`\
         b. If this is successful, you should be able to navigate to http://localhost:4444 and see the Selenium Grid page\
-        c. You'll also need to [Install Docker](https://docs.docker.com/docker-for-windows/install/)
+        c. You'll also need to [Install Docker](https://docs.docker.com/docker-for-windows/install/)\
         d. If done locally, you will also need to create an environment variable called **browserToTest** with a value of **Docker**. You may need to restart your machine. 
     4. If **NO browserToTest** variable is specified - then the tests will run on the Chrome WebDriver.
 
