@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Remote;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,14 +26,27 @@ namespace XeroTechAssessment.Hooks
         [BeforeScenario]
         public void BeforeScenario()
         {
-            _driver = new ChromeDriver();
-            _objectContainer.RegisterInstanceAs<IWebDriver>(_driver);
+            string browserToTest = Environment.GetEnvironmentVariable("browserToTest");
+            if (browserToTest == "Chrome")
+                _driver = new ChromeDriver();
+            else if (browserToTest == "Firefox")
+                _driver = new FirefoxDriver();
+            else if (browserToTest == "Docker")
+            {
+
+                DriverOptions driverOptions = new ChromeOptions();
+                _driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub"), driverOptions);
+            }
+            else
+                _driver = new ChromeDriver();
+
+                _objectContainer.RegisterInstanceAs<IWebDriver>(_driver);
         }
 
         [AfterScenario]
         public void AfterScenario()
         {
-            //TODO: implement logic that has to run after executing each scenario
+            _driver.Dispose();
         }
     }
 }
