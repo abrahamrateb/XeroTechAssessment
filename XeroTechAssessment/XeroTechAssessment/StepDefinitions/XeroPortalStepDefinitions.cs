@@ -19,12 +19,14 @@ namespace XeroTechAssessment.StepDefinitions
         public string loginUserName = "abrahamrateb@gmail.com";
         public string loginPassword = "xero1234";
         public LoginPage loginPage;
+        public DashboardPage dashboardPage;
 
         public XeroPortalStepDefinitions(ScenarioContext scenarioContext, IWebDriver driver)
         {
             _scenarioContext = scenarioContext;
             _driver = driver;
             loginPage = new LoginPage(_driver);
+            dashboardPage = new DashboardPage(_driver);
         }
 
         [Given(@"I logon to Xero")]
@@ -39,6 +41,13 @@ namespace XeroTechAssessment.StepDefinitions
         {
             Assert.IsTrue(true);
         }
+
+        [When(@"I click the Business Bank Account Link")]
+        public void WhenIClickTheBusinessBankAccountLink()
+        {
+            dashboardPage.ClickBankAccountLink();
+        }
+
 
     }
 }

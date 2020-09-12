@@ -5,4 +5,5 @@ I want to be able to add an “ANZ (NZ)” bank account inside any Xero Organisa
 
 Scenario: Add an ANZ Bank Account
 	Given I logon to Xero
+	When I click the Business Bank Account Link
 	Then I am happy
