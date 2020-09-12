@@ -28,6 +28,7 @@ namespace XeroTechAssessment.StepDefinitions
         [Then(@"I am happy")]
         public void ThenIAmHappy()
         {
+            //trigger commit
             Assert.IsTrue(true);
         }
 

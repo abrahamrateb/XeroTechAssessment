@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ibrah\\source\\repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\XeroTechAssessment.csproj": {}
+    "C:\\Users\\ibrah\\Source\\Repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\XeroTechAssessment.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ibrah\\source\\repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\XeroTechAssessment.csproj": {
+    "C:\\Users\\ibrah\\Source\\Repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\XeroTechAssessment.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ibrah\\source\\repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\XeroTechAssessment.csproj",
+        "projectUniqueName": "C:\\Users\\ibrah\\Source\\Repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\XeroTechAssessment.csproj",
         "projectName": "XeroTechAssessment",
-        "projectPath": "C:\\Users\\ibrah\\source\\repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\XeroTechAssessment.csproj",
+        "projectPath": "C:\\Users\\ibrah\\Source\\Repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\XeroTechAssessment.csproj",
         "packagesPath": "C:\\Users\\ibrah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ibrah\\source\\repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\obj\\",
+        "outputPath": "C:\\Users\\ibrah\\Source\\Repos\\XeroTestAssessment\\XeroTechAssessment\\XeroTechAssessment\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ibrah\\AppData\\Roaming\\NuGet\\NuGet.Config",
