@@ -7,4 +7,5 @@ Scenario: Add an ANZ Bank Account
 	Given I logon to Xero
 	When I click the Business Bank Account Link
 	And I click the Bank Account link
+	And I click the Bank Account button
 	Then I am happy

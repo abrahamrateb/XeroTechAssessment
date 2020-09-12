@@ -21,6 +21,7 @@ namespace XeroTechAssessment.StepDefinitions
         public LoginPage loginPage;
         public DashboardPage dashboardPage;
         public BankTransactionsPage bankTransactionsPage;
+        public BankAccountsPage bankAccountsPage;
 
         public XeroPortalStepDefinitions(ScenarioContext scenarioContext, IWebDriver driver)
         {
@@ -29,6 +30,7 @@ namespace XeroTechAssessment.StepDefinitions
             loginPage = new LoginPage(_driver);
             dashboardPage = new DashboardPage(_driver);
             bankTransactionsPage = new BankTransactionsPage(_driver);
+            bankAccountsPage = new BankAccountsPage(_driver);
         }
 
         [Given(@"I logon to Xero")]
@@ -56,6 +58,11 @@ namespace XeroTechAssessment.StepDefinitions
             bankTransactionsPage.ClickBankAccountLink();
         }
 
+        [When(@"I click the Bank Account button")]
+        public void WhenIClickTheBankAccountButton()
+        {
+            bankAccountsPage.ClickAddAccountButton();
+        }
 
     }
 }
