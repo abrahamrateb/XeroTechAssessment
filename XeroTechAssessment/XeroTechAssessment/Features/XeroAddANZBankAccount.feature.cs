@@ -108,6 +108,9 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("I click the Business Bank Account Link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 9
+ testRunner.And("I click the Bank Account link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 10
  testRunner.Then("I am happy", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
