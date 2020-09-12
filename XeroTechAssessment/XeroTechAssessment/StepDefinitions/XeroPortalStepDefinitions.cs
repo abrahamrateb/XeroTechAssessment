@@ -22,6 +22,7 @@ namespace XeroTechAssessment.StepDefinitions
         public DashboardPage dashboardPage;
         public BankTransactionsPage bankTransactionsPage;
         public BankAccountsPage bankAccountsPage;
+        public AddBankAccountsPage addBankAccountsPage;
 
         public XeroPortalStepDefinitions(ScenarioContext scenarioContext, IWebDriver driver)
         {
@@ -31,6 +32,7 @@ namespace XeroTechAssessment.StepDefinitions
             dashboardPage = new DashboardPage(_driver);
             bankTransactionsPage = new BankTransactionsPage(_driver);
             bankAccountsPage = new BankAccountsPage(_driver);
+            addBankAccountsPage = new AddBankAccountsPage(_driver);
         }
 
         [Given(@"I logon to Xero")]
@@ -63,6 +65,37 @@ namespace XeroTechAssessment.StepDefinitions
         {
             bankAccountsPage.ClickAddAccountButton();
         }
+
+        [When(@"I select ANZ")]
+        public void WhenISelectANZ()
+        {
+            addBankAccountsPage.SelectANZ();
+        }
+
+        [When(@"I select Everyday Account")]
+        public void WhenISelectEverydayAccount()
+        {
+            addBankAccountsPage.SelectEverydayAccount();
+        }
+
+        [When(@"I enter account name '(.*)'")]
+        public void WhenIEnterAccountName(string accountName)
+        {
+            addBankAccountsPage.EnterAccountName(accountName);
+        }
+
+        [When(@"I enter account number (.*)")]
+        public void WhenIEnterAccountNumber(string accountNumber)
+        {
+            addBankAccountsPage.EnterAccountNumber(accountNumber);
+        }
+
+        [When(@"I click the continue button")]
+        public void WhenIClickTheContinueButton()
+        {
+            addBankAccountsPage.ClickContinueButton();
+        }
+
 
     }
 }
