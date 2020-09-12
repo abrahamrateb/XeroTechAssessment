@@ -15,7 +15,7 @@ namespace XeroTechAssessment.Hooks
         // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
         private IWebDriver _driver;
         private readonly IObjectContainer _objectContainer;
-        
+                
         public XeroHooks(IObjectContainer objectContainer)
         {
             _objectContainer = objectContainer;
