@@ -103,3 +103,7 @@ C:\Users\ibrah\source\repos\XeroTestAssessment\XeroTechAssessment\XeroTechAssess
 C:\Users\ibrah\source\repos\XeroTestAssessment\XeroTechAssessment\XeroTechAssessment\bin\Debug\netcoreapp3.1\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
 C:\Users\ibrah\source\repos\XeroTestAssessment\XeroTechAssessment\XeroTechAssessment\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
 C:\Users\ibrah\source\repos\XeroTestAssessment\XeroTechAssessment\XeroTechAssessment\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\ibrah\source\repos\XeroTestAssessment\XeroTechAssessment\XeroTechAssessment\bin\Debug\netcoreapp3.1\XeroTechAssessment.pdb
+C:\Users\ibrah\source\repos\XeroTestAssessment\XeroTechAssessment\XeroTechAssessment\obj\Debug\netcoreapp3.1\XeroTechAssessment.csproj.CoreCompileInputs.cache
+C:\Users\ibrah\source\repos\XeroTestAssessment\XeroTechAssessment\XeroTechAssessment\obj\Debug\netcoreapp3.1\XeroTechAssessment.dll
+C:\Users\ibrah\source\repos\XeroTestAssessment\XeroTechAssessment\XeroTechAssessment\obj\Debug\netcoreapp3.1\XeroTechAssessment.pdb

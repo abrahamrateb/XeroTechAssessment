@@ -12,6 +12,7 @@
           "NUnit3TestAdapter": "3.15.1",
           "Selenium.Support": "3.141.0",
           "Selenium.WebDriver.ChromeDriver": "85.0.4183.8700",
+          "Selenium.WebDriver.GeckoDriver": "0.27.0",
           "SpecFlow": "3.4.8",
           "SpecFlow.NUnit": "3.4.8",
           "SpecFlow.Tools.MsBuild.Generation": "3.4.8",
@@ -499,6 +500,7 @@
         }
       },
       "Selenium.WebDriver.ChromeDriver/85.0.4183.8700": {},
+      "Selenium.WebDriver.GeckoDriver/0.27.0": {},
       "SpecFlow/3.4.8": {
         "dependencies": {
           "BoDi": "1.4.1",
@@ -1506,6 +1508,13 @@
       "sha512": "sha512-UaHj0RDkUoNtvYTVfZJk9Im/YpQX2nxugUZ5qWwx9phVu33tiecpBeTqQk4IPz8GQqUUjKdlT4QxKgu8VPafnA==",
       "path": "selenium.webdriver.chromedriver/85.0.4183.8700",
       "hashPath": "selenium.webdriver.chromedriver.85.0.4183.8700.nupkg.sha512"
+    },
+    "Selenium.WebDriver.GeckoDriver/0.27.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0B9C4dDYdEm8gf4NZ75haijZREuZEcnHKDzzGm9YvkpYxdFgexDMSaqT83vimibXfDSNjcMajodQn+3XROB+Iw==",
+      "path": "selenium.webdriver.geckodriver/0.27.0",
+      "hashPath": "selenium.webdriver.geckodriver.0.27.0.nupkg.sha512"
     },
     "SpecFlow/3.4.8": {
       "type": "package",
