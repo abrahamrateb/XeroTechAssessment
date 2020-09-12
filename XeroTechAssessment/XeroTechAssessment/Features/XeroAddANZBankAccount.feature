@@ -13,4 +13,4 @@ Scenario: Add an ANZ Bank Account
 	And I enter account name 'Abraham Test'
 	And I enter account number 01-0277-0100200-00
 	And I click the continue button
-	Then I am happy
+	Then account name 'Abraham Test' with account number '01-0277-0100200-00' is created

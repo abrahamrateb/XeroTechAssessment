@@ -96,6 +96,12 @@ namespace XeroTechAssessment.StepDefinitions
             addBankAccountsPage.ClickContinueButton();
         }
 
+        [Then(@"account name '(.*)' with account number '(.*)' is created")]
+        public void ThenAccountNameWithAccountNumberIsCreated(string accountName, string accountNumber)
+        {
+            Assert.IsTrue(bankAccountsPage.AssertAccountNameExist(accountName), "The account name: {0} does not exist", accountName);
+            Assert.IsTrue(bankAccountsPage.AssertAccountNumberExist(accountNumber), "The account number: {0} does not exist", accountNumber);
+        }
 
     }
 }
