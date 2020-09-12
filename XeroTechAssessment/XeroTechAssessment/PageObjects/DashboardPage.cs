@@ -24,6 +24,8 @@ namespace XeroTechAssessment.PageObjects
 
         public void ClickBankAccountLink()
         {
+            WebDriverWait wait = new WebDriverWait(_driver, new TimeSpan(0, 0, 30));
+            wait.Until(_driver => _driver.FindElement(By.XPath("//h3[@class='xui-panel--heading xui-text-panelheading xui-u-flex-col xui-u-flex-grow xdash-WidgetHeader__widget-header--description___13GyL']")));
             businessBankAccountLink.Click();
         }
     }
