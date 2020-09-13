@@ -24,6 +24,7 @@ You can also Ctrl + Shift + B to build the solution followed by Ctrl + R then T 
 - You can also run tests directly from the pipeline. For this you navigate to (https://dev.azure.com/abrahamrateb/XeroTestAssessment/_build), login using your Azure DevOps credentials,
 then you can investigate the pipeline and trigger a run. **YOU CAN ALSO REVIEW THE COMMIT AND PIPELINE HISTORY**.
 - In Production we would implement a clean up script to delete the Abraham Test Account or a snapshot to return the portal to it's state prior to the test. 
+- **If you cannot view the Edit/Run Pipeline button, please request permission from abrahamrateb@gmail.com**
 
 # Cross Browser Testing on the Pipeline
 - If you want to change the browser - you can click into the **Xero Specflow Tests Pipeline > Edit > Variables** and then you can add/modify **browserToTest** variable to the following: 
