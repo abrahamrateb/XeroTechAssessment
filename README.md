@@ -17,6 +17,8 @@ Test Assessment Using Specflow + NUnit + Selenium WebDriver
 
 # Running Tests Locally
 - If you want to run and debug the tests/negative test locally, you can browse to (https://dev.azure.com/abrahamrateb/_git/XeroTestAssessment) and Clone the repo. 
+- If this does not work, you can clone from the GitHub Repo instead (https://github.com/abrahamrateb/XeroTechAssessment). 
+- Simply open **Visual Studio 2019 > Clone Repository >** and paste the GitHub Link to clone the repo.
 You can then run the tests from inside of Visual Studio, by building the solution, right clicking on the Specflow test and selecting run. 
 You can also Ctrl + Shift + B to build the solution followed by Ctrl + R then T to run the tests. 
 
