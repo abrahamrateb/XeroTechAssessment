@@ -29,7 +29,7 @@ then you can investigate the pipeline and trigger a run. **YOU CAN ALSO REVIEW T
 - If you want to change the browser - you can click into the **Xero Specflow Tests Pipeline > Edit > Variables** and then you can add/modify **browserToTest** variable to the following: 
     1. **Chrome** will run the tests on the Chrome WebDriver
     2. **Firefox** will run the test on the Firefox GeckoDriver
-    3. **Docker** will run the tests on a docker container (for this we would need a docker selenium/standalone-chrome container exposed to http://localhost:4444).
+    3. **Docker** will run the tests on a docker container (for this we would need a docker selenium/standalone-chrome container exposed to http://localhost:4444).\
         a. This will not currently run on the pipeline, however if running locally, you'll need to have docker installed and run\
         `docker run -d -p 4444:4444 --shm-size 2g -p 5900:5900 selenium/standalone-chrome`\
         b. If this is successful, you should be able to navigate to http://localhost:4444 and see the Selenium Grid page\
