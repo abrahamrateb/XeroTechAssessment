@@ -2,8 +2,6 @@
 Test Assessment Using Specflow + NUnit + Selenium WebDriver
 
 # CLEAN UP - STEP ZERO
-- There is a known issue within Azure DevOps where [tests run twice on the pipeline](https://developercommunity.visualstudio.com/content/problem/891521/tests-are-running-twice-in-azure-devops-pipeline.html)
-- This is supposed to have been fixed but looks like it doesn't. This will result in the second test on the pipeline failing unless the ANZ account is deleted before the 2nd test is run.
 - After running tests, ensure to clean up and delete the account to leave the Xero Production Demo in the same state it originally was. 
 - To do this you'll need to navigate to the [Xero Login Portal > Accounting > Chart of Accounts](https://go.xero.com/GeneralLedger/ChartOfAccounts.aspx?Start=1&PageSize=200), 
   and login with either your demo account or abrahamrateb@gmail.com and xero1234 as the password. 
@@ -25,7 +23,6 @@ You can also Ctrl + Shift + B to build the solution followed by Ctrl + R then T 
 # Running Tests on Azure DevOps Pipeline
 - You can also run tests directly from the pipeline. For this you navigate to (https://dev.azure.com/abrahamrateb/XeroTestAssessment/_build), login using your Azure DevOps credentials,
 then you can investigate the pipeline and trigger a run. **YOU CAN ALSO REVIEW THE COMMIT AND PIPELINE HISTORY**.
-- If running from the pipeline, please ensure to CLEAN UP by deleting the Abraham Test account AFTER the first test is run and BEFORE the second test is run in the pipeline. 
 - In Production we would implement a clean up script to delete the Abraham Test Account or a snapshot to return the portal to it's state prior to the test. 
 
 # Cross Browser Testing on the Pipeline
